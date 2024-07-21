@@ -8,7 +8,7 @@ case $config in
     *)
 
 echo "| selecting $config |"
-cp "../$config.cfg" "$cs2Location/game/bin/win64/fatal_settings.cfg"
+cp "./$config.cfg" "$cs2Location/game/bin/win64/fatal_settings.cfg"
 
-source ./load.sh
+source ./functions/load.sh
 esac

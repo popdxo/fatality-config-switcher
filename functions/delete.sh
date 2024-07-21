@@ -1,10 +1,10 @@
-delete='echo "| deleting $nomore |"; rm "../$nomore.cfg";'
-nodontdoit='source ./delete.sh'
+delete='echo "| deleting $nomore |"; rm "./$nomore.cfg";'
+nodontdoit='source ./functions/delete.sh'
 
 echo " ------- "
 echo " Delete Mode "
 echo " ------- "
-echo " Type the name of a config to delete it (or type quit to go back)"
+echo " Type the name of a config to delete it or type (q)uit to go back"
 read nomore
 case $nomore in
     [Qq]|[Qq][Uu][Ii][Tt]) $quit ;;
