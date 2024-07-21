@@ -1,5 +1,5 @@
 clear
-source ../settings
+source ./settings
 echo "
 warning: i suck at making stuff so use with caution
  ________________________________________________________________
@@ -27,12 +27,12 @@ fi
 echo " ------- "
 
 # Variables to do something
-load="source ./load.sh"
-save="source ./save.sh"
-delete="source ./delete.sh"
+load="source ./functions/load.sh"
+save="source ./functions/save.sh"
+delete="source ./functions/delete.sh"
 
 # Variables for scripts
-quit="source ./script.sh"
+quit="source ./functions/script.sh"
 
 echo "select the mode using the corresponding number or name"
 echo " (1: Load) (2: Save) (3: Delete)"
