@@ -19,8 +19,8 @@ echo " $cs2Location
  -------
  configs"
 # Check if there are any .cfg files in the ../ directory. if there are then they get printed. Otherwise a message says there arent
-if ls ../*.cfg &> /dev/null; then
-    ls ../*.cfg | sed 's/.cfg//' | xargs -I {} basename {}
+if ls ./*.cfg &> /dev/null; then
+    ls ./*.cfg | sed 's/.cfg//' | xargs -I {} basename {}
 else
     echo "No configs saved"
 fi
