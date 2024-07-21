@@ -11,9 +11,10 @@ case $nomore in
     *)
 esac
 echo " ------- "
-echo " you sure you wanna do this?
- type (y)es or (n)o "
-read confirm
+confirm=""
+while [ -z "$confirm" ] || [[ ! $confirm =~ ^([yY][eE][sS]|[yY]|[nN][oO]|[nN])$ ]]; do
+    read -p "Are you sure you want to delete the config? (y/n) " confirm
+done
 
 case $confirm in
     [yY]|[yY][eE][sS])
